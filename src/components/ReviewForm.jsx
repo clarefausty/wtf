@@ -47,7 +47,7 @@ function ReviewForm({addReview}) {
 
   return (
     <>
-      <div className="container">
+      <div className="container form-container">
         <div className="card">
           <form onSubmit={formSubmit}>
             <h3>Kindly drop a Review for our service you just experienced.</h3>

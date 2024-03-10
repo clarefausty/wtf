@@ -11,10 +11,14 @@ const AllReviews = () => {
     <>
       <div>
         <p>All Reviews</p>
-        <div className="container">
+        <div className="container allreview-contaner">
+        <div className="revew-contaner">
           <ReviewStats review={review} />
+          </div>
           <ReviewList review={review} deleteReview ={deleteReview }  />
-        </div>
+          
+          </div>
+        
       </div>
 
       <div className="about-link">
