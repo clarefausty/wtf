@@ -1,7 +1,7 @@
 # Dev Divas Project (GROUP ONE) ON REViEW APP
 
 This is a group assigment done by group One Women Techsters 2024 class
-#NAMES
+# NAMES
 -Chinwendu Achilonu
 -Oreoluwa Rasheed 
 -Chidinma Ugonna
