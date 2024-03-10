@@ -10,7 +10,7 @@ const AllReviews = () => {
   return (
     <>
       <div>
-        <p>All Reviews</p>
+        <h2>All Reviews</h2>
         <div className="container allreview-contaner">
         <div className="revew-contaner">
           <ReviewStats review={review} />

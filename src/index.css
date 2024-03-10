@@ -17,14 +17,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 768px;
-  margin: auto;
-  
-}
-.form-container{
-  padding: 0 20px;
-}
 .allreview-contaner{
   width: 90%;
   display: flex;
@@ -32,6 +24,15 @@ ul {
   margin: auto;
   align-items: center;
   padding: 0px;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  
+}
+.form-container{
+  padding: 0 20px;
 }
 
 header {
@@ -279,7 +280,10 @@ input:focus {
 
   @media screen and (min-width:1024px){
     .ReviewList{
-      
       grid-template-columns:  1fr 1fr 1fr;
     }
+    .review-stats {
+      gap: 15em;
+    }
+
     }
