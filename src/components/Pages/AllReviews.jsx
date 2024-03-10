@@ -1,13 +1,28 @@
-import React from 'react';
-import ReviewForm from '../ReviewForm';
+import { useReviewContext } from '../ReviewContext';
+import { FaHouseDamage } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import ReviewList from '../ReviewList';
+import ReviewStats from '../ReviewStats';
 
+const AllReviews = () => {
+  const { review, deleteReview  } = useReviewContext();
 
-const AllReviews = ({handleAddReview}) => {
   return (
-    <div>
-      <p>All Reviews</p>
-      <ReviewForm handleAdd={handleAddReview} />
-    </div>
+    <>
+      <div>
+        <p>All Reviews</p>
+        <div className="container">
+          <ReviewStats review={review} />
+          <ReviewList review={review} deleteReview ={deleteReview }  />
+        </div>
+      </div>
+
+      <div className="about-link">
+        <Link to="/">
+          <FaHouseDamage size={40} />
+        </Link>
+      </div>
+    </>
   );
 };
 

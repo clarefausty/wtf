@@ -1,22 +1,24 @@
-import ReviewItem from "./ReviewItem"
+import ReviewItem from "./ReviewItem";
+import { useReviewContext } from "../components/ReviewContext";
 
-function ReviewList({reviews, deleteReview}) {
+function ReviewList({review, deleteReview}) {
+  // const { review, deleteReview } = useReviewContext();
 
-    if(!reviews || reviews.length === 0){
-        return <p>No review yet!</p>
-      }
-        
+  if (!review || review.length === 0) {
+    return <p>No review yet!</p>;
+  }
+
   return (
     <>
       <div>
-        {reviews.map((item) => (
-            <div key={item.id}>
-                <ReviewItem review={item} deleteReview={deleteReview} />
-            </div>
+        {review.map((item) => (
+          <div key={item.id}>
+            <ReviewItem review={item} deleteReview={deleteReview} />
+          </div>
         ))}
       </div>
     </>
-  )
+  );
 }
 
-export default ReviewList
+export default ReviewList;
