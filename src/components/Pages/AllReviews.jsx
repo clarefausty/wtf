@@ -22,7 +22,7 @@ const AllReviews = () => {
       </div>
 
       <div className="about-link">
-        <Link to="/">
+        <Link to="/review">
           <FaHouseDamage size={40} />
         </Link>
       </div>
